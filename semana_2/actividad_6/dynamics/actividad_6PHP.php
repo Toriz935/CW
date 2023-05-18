@@ -146,6 +146,5 @@
             echo "<p align='center'><strong>Se imprimieron 15 boletos, faltaron $sobrante.</strong></p>";
         }
     ?>
-    <h1></h1>
 </body>
 </html>
