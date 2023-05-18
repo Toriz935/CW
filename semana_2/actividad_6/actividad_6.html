@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletos don Gerardo.com</title>
+    <link rel="icon" href="https://www.shutterstock.com/image-photo/middle-age-latin-man-wearing-260nw-2191637135.jpg" type="icon-x/image"></icon>
+</head>
+<body>
+    <form action="./dynamics/actividad_6PHP.php" method="post" autocomplete="on"><!--guardar el .php en una carpeta que se llame "dymamics" en el directorio raíz-->
+        <fieldset>
+            <legend>Compra aquí tus boletos.</legend>
+            <label>Nombre:
+                <input type="text"  id="nombre" name="nombre" required>
+            </label>
+            <br><br>
+            <label>Apellidos:
+                <input type="text" id="apellido" name="apellido" required>
+            </label>
+            <br><br>
+            <label for="zona">Zona:
+                <select id="zona" name="zona" requiered>
+                    <option value="Gradas">Gradas</option>
+                    <option value="Butacas">Butacas</option>
+                    <option value="Balcón">Balcón</option>
+                    <option value="De pie">De pie</option>
+                    <option value="Hasta el frente">Hasta el fente</option>
+                    <option value="Estacionamiento">Escuchar desde el estacionamiento (Más econónomico)</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Número de boletos a comprar (máximo 15):
+                <input type="number" id="num_boletos" name="num_boletos" min="1" max="15" required>
+            </label>
+            <br><br>
+            <label for="artista">Artista:
+                <select id="artista" name="artista" required>
+                    <option value="Roberto Musso">Roberto Musso</option>
+                    <option value="El cuarteto de Nos">El cuarteto de Nos</option>
+                    <option value="Taylor Swift">Taylor Swift</option>
+                    <option value="Rosalía">Rosalía</option>
+                    <option value="Chayanne">Chayanne</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Fecha:
+                <input type="date" id="fecha" name="fecha" required>
+            </label>
+            <br><br>
+            <label>Lugar:
+                <select id="lugar" name="lugar" required>
+                    <option value="Auditorio Nacional">Auditorio Nacional</option>
+                    <option value="La explanada del Zócalo de la CDMX">La explanada del Zócalo de la CDMX</option>
+                    <option value="La casa de Joaquín">La casa de Joaquín</option>
+                    <option value="Tepocueva">La Tepocueva (solo tepos)</option>
+                    <option value="Foro sol">Foro Sol</option>
+                </select>
+            </label>
+            <br><br>
+            <label>¿Desea incluir algun extra?<br><br>
+                <input  type="checkbox" id="extra_1" name="extra_1" checked>Palomitas<br>
+                <input  type="checkbox" id="extra_2" name="extra_2" checked>Refresco<br>
+                <input  type="checkbox" id="extra_2" name="extra_3" checked>VIP<br>
+                <input  type="checkbox" id="extra_3" name="extra_4" checked>Regalo sorpresa<br>
+            </label>
+            <button type="submit">Comprar</button>
+            <button type="reset">Reiniciar</button>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
