@@ -21,94 +21,101 @@
         $extra_2 = (isset($_POST["extra_2"]) && $_POST["extra_2"] != "")? "Refresco, " : "";
         $extra_3 = (isset($_POST["extra_3"]) && $_POST["extra_3"] != "")? "VIP, " : "";
         $extra_4 = (isset($_POST["extra_4"]) && $_POST["extra_4"] != "")? "Regalo " : "";
-        //Asignar una foto de acuerdo al artista elegido//////////////////////////////////////////////////////
+/////////////////////////Asignar una foto de acuerdo al artista elegido//////////////////////////////////////////////////////
+        switch($artista){
             //roberto
-        if(strcmp($artista, "Roberto Musso") == 0){
-            $foto_artista = "<img src='./../fotos/roberto.png' height='500px' width='500'>";
-            $frase_chida = "'<i>No soy un cordero a matar con cianuro, soy un guerrero y todavía respiro.</i>'";
-            //Cuarteto
-        }else
-        if(strcmp($artista, "El cuarteto de Nos") == 0){
-            $foto_artista = "<img src='./../fotos/cuarteto.png' height='500px' width='500'>";
-            $frase_chida = "'<i>Antes de dormirme hoy quiero afirmar que este un día más y no un día menos.</i>'";
-            
-        }else
+            case "Roberto Musso":
+                $foto_artista = "<img src='./../fotos/roberto.png' height='500px' width='500'>";
+                $frase_chida = "'<i>No soy un cordero a matar con cianuro, soy un guerrero y todavía respiro.</i>'";
+                break;
+            //cuarteto
+            case "El cuarteto de Nos":
+                $foto_artista = "<img src='./../fotos/cuarteto.png' height='500px' width='500'>";
+                $frase_chida = "'<i>Antes de dormirme hoy quiero afirmar que este un día más y no un día menos.</i>'";
+                break;
             //Taylor
-        if(strcmp($artista, "Taylor Swift") == 0){
-            $foto_artista = "<img src='./../fotos/taylor.png' height='500px' width='500'>";
-            $frase_chida = "'<i>Ninguna voz es tan cruel como la voz que cada uno de nosotros tiene en la cabeza.</i>'";
-            
-        }else
+            case "Taylor Swift":
+                $foto_artista = "<img src='./../fotos/taylor.png' height='500px' width='500'>";
+                $frase_chida = "'<i>Ninguna voz es tan cruel como la voz que cada uno de nosotros tiene en la cabeza.</i>'";
+                break;
             //Rosalía
-        if(strcmp($artista, "Rosalía") == 0){
-            $foto_artista = "<img src='./../fotos/rosalia.png' height='500px' width='500'>";
-            $frase_chida = "'<i>Si yo supiera compañero, que el sol que sale te ofende, con el sol me peleara.</i>'";
-        }else
+            case "Rosalía":
+                $foto_artista = "<img src='./../fotos/rosalia.png' height='500px' width='500'>";
+                $frase_chida = "'<i>Si yo supiera compañero, que el sol que sale te ofende, con el sol me peleara.</i>'";
+                break;
             //Chayanne
-        if(strcmp($artista, "Chayanne") == 0){
+            case "Chayanne":
                 $foto_artista = "<img src='./../fotos/chayanne.png' height='500px' width='500'>";
                 $frase_chida = "'<i>Que se confundan la verdad y la mentira y que sólo tu amor ilumine mi vida.</i>'";
+                break;
             }
-///////////////////////////Asignar una foto dependiendo del lugar////////////////////////////////////////////////
-
+///////////////////////////Asignar una foto dependiendo del lugar//////////////////////////////////////////////// 
+        switch($lugar){
             //Auditorio Nacional
-        if(strcmp($lugar, "Auditorio Nacional") == 0){
-            $foto_lugar = "<img src='./../fotos/auditorio.png' height='250px' width='250'>";
-        }else 
-            //La explanada del Zócalo de la CDMX
-        if(strcmp($lugar, "La explanada del Zócalo de la CDMX") == 0){
-            $foto_lugar = "<img src='./../fotos/zocalo.png' height='250px' width='250'>";
-        }else
+            case "Auditorio Nacional":
+                $foto_lugar = "<img src='./../fotos/auditorio.png' height='250px' width='250'>";
+                break;
+             //La explanada del Zócalo de la CDMX
+            case "La explanada del Zócalo de la CDMX":
+                $foto_lugar = "<img src='./../fotos/zocalo.png' height='250px' width='250'>";
+                break;
             //La casa de Joaquín
-        if(strcmp($lugar, "La casa de Joaquín") == 0){
-            $foto_lugar = "<img src='./../fotos/casa.png' height='250px' width='250'>";
-        }else
+            case "La casa de Joaquín":
+                $foto_lugar = "<img src='./../fotos/casa.png' height='250px' width='250'>";
+                break;
             //tepocueva
-        if(strcmp($lugar, "Tepocueva") == 0){
-            $foto_lugar = "<img src='./../fotos/tepocueva.png' height='250px' width='250'>";
-        }else
+            case "Tepocueva":
+                $foto_lugar = "<img src='./../fotos/tepocueva.png' height='250px' width='250'>";
+                break;
             //Foro sol
-        if(strcmp($lugar, "Foro sol") == 0){
-            $foto_lugar = "<img src='./../fotos/foro.png' height='250px' width='250'>";
+            case "Foro sol":
+                $foto_lugar = "<img src='./../fotos/foro.png' height='250px' width='250'>";
+                break;
         }
 ////////////////////////Asignar una foto dependiedno de la zona///////////////////////////////////////////////////////////
+      switch($zona){
             //Gradas
-        if(strcmp($zona, "Gradas") == 0){
-            $foto_zona = "<img src='./../fotos/gradas.png' height='250px' width='250'>";
-        }else 
+            case "Gradas":
+                $foto_zona = "<img src='./../fotos/gradas.png' height='250px' width='250'>";
+                break;
             //Butacas
-        if(strcmp($zona, "Butacas") == 0){
-            $foto_zona = "<img src='./../fotos/butacas.png' height='250px' width='250'>";
-        }else 
+            case "Butacas":
+                $foto_zona = "<img src='./../fotos/butacas.png' height='250px' width='250'>";
+                break;
             //Balcón
-        if(strcmp($zona, "Balcón") == 0){
-            $foto_zona = "<img src='./../fotos/balcon.png' height='250px' width='250'>";
-        }else 
+            case "Balcón":
+                $foto_zona = "<img src='./../fotos/balcon.png' height='250px' width='250'>";
+                break;
             //De pie
-        if(strcmp($zona, "De pie") == 0){
-            $foto_zona = "<img src='./../fotos/de_pie.png' height='250px' width='250'>";
-        }else
+            case "De pie":
+                $foto_zona = "<img src='./../fotos/de_pie.png' height='250px' width='250'>";
+                break;
             //Hasta el frente
-        if(strcmp($zona, "Hasta el frente") == 0){
-            $foto_zona = "<img src='./../fotos/enfrente.png' height='250px' width='250'>";
-        }else
+            case "Hasta el frente":
+                $foto_zona = "<img src='./../fotos/enfrente.png' height='250px' width='250'>";
+                break;
             //Estacionamiento
-        if(strcmp($zona, "Estacionamiento") == 0){
-            $foto_zona = "<img src='./../fotos/estacionamiento.png' height='250px' width='250'>";
+            case "Estacionamiento":
+                $foto_zona = "<img src='./../fotos/estacionamiento.png' height='250px' width='250'>";
+                break;
         }
-        //////////////////////////////////////////
+///////////////////////////////////Verificar los extras///////////////////////////////////
+        //junta los extras en una sola variable para imprimirlos con más sencillez, de no haber selecionado nada, guarda "ninguno"
         if($extra_1.$extra_2.$extra_3.$extra_4 != ""){
-            $extras = $extra_1.$extra_2.$extra_3.$extra_4;//junta los extras en una sola variable para imprimirlos con más sencillez, de no haber selecionado nada, guarda "ninguno"
+            $extras = $extra_1.$extra_2.$extra_3.$extra_4;
         }else{
             $extras = "Ninguno";
         }
+/////////////////////////////Verificar los Boletos/////////////////////////////////////
+        //Asegura que solo se puedan imprimir 15 boletos.
         if($num_boletos > 15){
-            $exceso = $num_boletos;//Asegura que solo se puedan imprimir 15 boletos.
+            $exceso = $num_boletos;
             $num_boletos = 15;
         }else{
             $exceso = 0;
         }
         $sobrante = $exceso - $num_boletos;
+///////////////////////////Imprimir los boletos////////////////////////////////
         for($i=1;$i<=$num_boletos;$i++)
         {
             echo "
@@ -142,6 +149,7 @@
                 </table>
             "."<br>"; 
         }
+        //anunciar que no se terminaron de imprimir boletos
         if($sobrante > 0){
             echo "<p align='center'><strong>Se imprimieron 15 boletos, faltaron $sobrante.</strong></p>";
         }
