@@ -1,7 +1,7 @@
 body{
-    background-image: url(./../../leFish.png);   
+    background-image: url(./../multimedia/leFish.png);   
 }
-
+/* -------------------------------------section----------------------------------- */
 .container{
     border: 10px solid rgba(125, 125, 125, 0.7);
     background-color: rgba(57, 134, 16, 0.7);
@@ -10,6 +10,11 @@ body{
     border: 10px solid black;
     font-family: cursive;
 }
+
+/* #foto:hover{
+    transform: scale 10;
+} */
+/* -----------------------------article------------------------- */
 .text{
     color: rgb(255, 255, 255);
 }
@@ -18,6 +23,8 @@ h2{
     width: fit-content;
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 #foto{
 
@@ -30,40 +37,169 @@ h2{
     margin-bottom: 2%;
     /* transition: transform 500ms; */
 }
-/* #foto:hover{
-    transform: scale 10;
-} */
 .music{
     font-family: 'Times New Roman', Times, serif;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
+    font-size: x-large;
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
     border: 10px inset black;
     margin: auto;
 }
 .tab{
     align-self: center;
     margin: auto;
-    justify-content: center;
     border: 10px inset black;
     width: fit-content;
     height: 300px;
-    overflow: scroll;
+    overflow: auto;
     background-color: rgb(38, 97, 18);
+
 }
 ol{
     margin: auto;
-    border: 10px  ridge black;
+    border: 10px  double black;
     width: fit-content;
 }
 ul{
     margin: auto;
-    border: 10px outset black;
+    border: 10px double black;
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
 }
-.a{
-    position: sticky;
-    top: 20px;
+div:first-child{
+    border-radius: 5px;
+    border: 15px dotted rgb(25, 77, 15);
+}
+div[class="music"]{
+    background-color: rgb(0, 125, 0);
+    border: 10px solid rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(255, 235, 12);
+}
+.temas{
+    font-size: xx-large;
+    font-family: fantasy;
+    margin: auto;
+    background-color: rgb(15, 140, 44);
+    padding: 2rem;
+    border-image-source: url(./../multimedia/cora.png);
+    border-image-width: 10%;
+    border-image-outset: 32px 32px;
+    border-image-slice: 2rem;
+    border-image-repeat: round;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+    text-align: center;
+    overflow: auto;
+}
+div[id="tema"]{
+    border: transparent;
+}
+.dibujo{
+    justify-content: center;
+    border: 12px solid black;
+}
+.cir{
+    position: relative;
+    z-index: 0;
+    border: 10px solid black;
+    border-radius: 100%;
+    padding: 10rem;
+    margin: auto;
+    
+}
+#hat{
+    position: relative;
+    top: 100px;
+    border-radius: 5%;
+    height: 10px;
+    width: 20px;
+    background-color: black;
+    padding: 5rem;
+    z-index: 4;
+}
+#hat2{
+    z-index: 5;
+    position: relative;
+    top: 100px;
+    border: 10px solid black;
+    border-radius: 5%;
+    height: 1px;
+    width: 20%;
+    background-color: black;
+    padding: 1rem;
+}
+#head{
+    position: relative;
+    top: -75px;
+    height: 50px;
+    width: 50px;
+    background-color: aliceblue;
+    z-index: 1;
+    
+}
+#body{
+    border: 10px solid black; 
+    position: relative;
+    top: 10px;
+    z-index: 1;
+    padding: 8rem;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    background-color: aliceblue;
+}
+#button{
+    position: relative;
+    top: -250px;
+    z-index: 5;
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 100%;
+    padding: 1rem;
+    margin: auto;
+    height: 2px;
+    width: 2px;
+}
+#button2{
+    position: relative;
+    top: -425px;
+    z-index: 5;
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 100%;
+    padding: 1rem;
+    margin: auto;
+    height: 2px;
+    width: 2px;
+}
+#eye1{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    z-index: 2;
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 100%;
+    padding: 1px;
+    margin: auto;
+    height: 20px;
+    width: 2px;
+}
+#eye2{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 5;
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 100%;
+    padding: 1px;
+    margin: auto;
+    height: 20px;
+    width: 2px;
 }
