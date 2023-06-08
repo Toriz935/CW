@@ -216,13 +216,15 @@ let vuelo = new movimiento("Vuelo", "especial", 90, 95);
 let rayquaza = new poke("Rayquaza", 349, 346, 256, 203, 204, 212, "dragón", "volador", 89, ascenso_draco, garra_dragon, vel_extrema, vuelo);
 
 //poke4 Alakazam
-let gran_ojo = new movimiento("Gran Ojo", "fisico", 10,10);
-let kinetico = new movimiento("Kinético", "fisico",  10, 80);
-let recuperacion = new movimiento("Recuperación", "especial", 10,10);
-let psiquico = new movimiento("Psíquico", "especial", 90,100);
+let gran_ojo = new movimiento("Gran Ojo", "fisico", 10, 10);
+let kinetico = new movimiento("Kinético", "fisico", 10, 80);
+let recuperacion = new movimiento("Recuperación", "especial", 10, 10);
+let psiquico = new movimiento("Psíquico", "especial", 90, 100);
+
+let alakazam = new poke("Alakazam", 226, 135, 261, 134, 212, 269, "psiquico", "null", 90, gran_ojo, kinetico, recuperacion, psiquico);
 ////--------------------------------------------------------------------------------------///
-let entrenador = new entrenadores("Alex", "Kalos", 7, xerneas, null, null, null, null, null);
-let rival = new entrenadores("Jatz", "Unova", 8, delphox, rayquaza, null, null, null, null,);//no c pq el nombre, solo apreté teclas al azar
+let entrenador = new entrenadores("Alex", "Kalos", 7, xerneas, alakazam, null, null, null, null);
+let rival = new entrenadores("Jatz", "Unova", 8, delphox, rayquaza, null, null, null, null);//no c pq el nombre, solo apreté teclas al azar
 
 //---------------------------------------------------------------------------------------//
 const pok_r = ["rival.p1", "rival.p2", "rival.p3", "rival.p4", "rival.p5", "rival.p6"];
@@ -240,5 +242,5 @@ const salud_r = [rival.p1.hp + rival.p2.hp]// + rival.p3.hp + rival.p4.hp + riva
 // // console.log(rayquaza.hp)
 // // console.log(pok_e[1])
 //--------------------------------------------------------//
-//La idea original era hacer q todo fuera automático, q los movimientos y los pokes en combate fueran aleatorios, pero por las dificultades 
+//La idea original era hacer q todo fuera automático, q los movimientos y los pokes en combate fueran aleatorios, pero por las dificultades
 //se redujo rápidamente a lo que sea que es esto, sé que no es lo mejor o si quiera está completo pero juro que hize lo que pude.
